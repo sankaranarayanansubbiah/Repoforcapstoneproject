@@ -1,6 +1,7 @@
 #!/bin/bash
 
 GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+echo "Current Git Branch: ${GIT_BRANCH}"
 
 if [[ "${GIT_BRANCH}" == "main" ]]; then
     ./build.sh
