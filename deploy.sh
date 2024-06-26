@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Retrieve the current Git branch name
-GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+GIT_BRANCH=${GIT_BRANCH:-$(git rev-parse --abbrev-ref HEAD)}
 
 # Debugging output
 echo "Current Git Branch: ${GIT_BRANCH}"
