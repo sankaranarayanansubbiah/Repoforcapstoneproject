@@ -4,12 +4,12 @@ GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 if [[ "${GIT_BRANCH}" == "main" ]]; then
     ./build.sh
-    docker tag guvi sankaranarayanansubbiah/prod
-    docker push sankaranarayanansubbiah/prod
+    docker tag guvi sankaranarayanansubbiah/prod:latest
+    docker push sankaranarayanansubbiah/prod:latest
 elif [[ "${GIT_BRANCH}" == "dev" ]]; then
     ./build.sh
-    docker tag guvi sankaranarayanansubbiah/dev
-    docker push sankaranarayanansubbiah/dev
+    docker tag guvi sankaranarayanansubbiah/dev:latest
+    docker push sankaranarayanansubbiah/dev:latest
 else
     echo "deployment failed"
 fi
