@@ -1,0 +1,7 @@
+version: '3.8'
+  
+services:
+  guvicontainer:
+   image: guvi
+   ports:
+   - "3000:80"
