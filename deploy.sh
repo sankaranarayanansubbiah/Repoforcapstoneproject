@@ -18,3 +18,4 @@ elif [[ "${GIT_BRANCH}" == "origin/dev" ]]; then
 else
     echo "Deployment failed: Branch ${GIT_BRANCH} is not supported for deployment."
 fi
+
